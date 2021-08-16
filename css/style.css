@@ -488,7 +488,7 @@ ul.newsul li span{
   
   .homelist{
 	  height: 1400px;
-	  
+	  overflow: auto;
 	  width:1229px;
 	  margin-left: 18%;
   }
