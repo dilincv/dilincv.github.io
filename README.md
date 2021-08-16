@@ -1,2 +1,2 @@
 # dilincv_new.github.io
-home page of IDV lab
+Home page of IDV lab
