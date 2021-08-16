@@ -459,7 +459,7 @@ ul.newsul li span{
     float: left;
     vertical-align: top;
     margin-left: 180px;
-    position:fixed;
+    position:absolute;
 }
 
 .publication .left .year i {
