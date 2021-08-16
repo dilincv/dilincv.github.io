@@ -1,0 +1,107 @@
+body,html{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: #f3cf90;
+}
+/*font*/
+@font-face {
+    font-family: 'Weibei';  /* project id 248115 */
+    src: url(../font/Weibei.eot);
+    src: url(../font/Weibei.woff) format('woff'),
+    url(../font/Weibei.ttf) format('truetype'),
+    url(../font/Weibei.svg#iconfont) format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'PingFangSC';  /* project id 248115 */
+    src: url(../font/PingFangSC-Regular.woff) format('woff'),
+    url(../font/PingFangSC-Regular.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+.warps{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+}
+.banner{width: 93%;height: auto;overflow: hidden;position: relative;margin:0 auto;padding-top: 22px;}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    width: 22%!important;
+    bottom: 12%!important;
+}
+.swiper-slide a{display: block;overflow: hidden}
+.swiper-pagination-bullet{background: #555!important;opacity: 1!important;}
+.swiper-pagination-bullet-active{background:#b40500!important;width: 20px!important;height: 8px!important;border-radius: 25px!important; }
+/*模块儿1*/
+.modularone{display: block;overflow: hidden;margin-top:20px; }
+.title{width: 100%;height: 75px;background: url("../images/title.png")no-repeat center top;background-size: 100% 75px;text-align: center;}
+.title h2{color: #fff;font-size: 28px;line-height:66px;font-family:Weibei;}
+.modularbox{display: flex;flex-wrap: wrap;margin-top: 10px; }
+.modularbox .onerow{text-align: center;width: 33%;margin-bottom: 22px;}
+.modularbox .onerow a{display: block;overflow: hidden}
+.modularbox .onerow a img{width: 76px;height: 76px;overflow: hidden;}
+.modularbox .onerow:last-child a img{width: 85px;height: 85px;overflow: hidden}
+.modularbox .onerow:last-child a p{margin-top:3px!important;}
+.modularbox .onerow p{font-size: 20px;color: #333;display: block;margin-top: 10px;font-family: PingFangSC}
+.modularbot{width: 100%;height: auto;overflow: hidden;border-top: 1px solid #AE8E55;border-bottom: 1px solid #AE8E55;display: flex}
+.botleft{width: 49%;display: flex;border-right: 1px solid #AE8E55;}
+.botleft a{display: flex;overflow: hidden;justify-content: space-around; align-items: center}
+.botright{width: 49%;display: flex;}
+.botright a{display: flex;overflow: hidden;justify-content: space-around; align-items: center}
+.botleft a img:first-child{margin: 0 10px 0 18px;display: block;padding: 16px 0; width: 56px;height: 68px;}
+.botleft a .bottext{text-align:left; }
+.botleft a .bottext h3{font-size: 20px;color: #910C0C;font-family:PingFangSC }
+.botright a img:first-child{margin: 0 10px 0 18px;display: block;padding: 16px 0; width: 52px;height: 58px;}
+.botright a .bottext{text-align:left; }
+.botright a .bottext h3{font-size: 20px;color: #910C0C;font-family:PingFangSC }
+.botright a .bottext p{font-size: 13px;color: #363636;font-family:PingFangSC ;margin-right:20px;}
+.botleft a .bottext p{font-size: 13px;color: #363636;font-family:PingFangSC ;margin-right: 10px;}
+/*模块儿2*/
+.modulartow{display: block;overflow: hidden;margin-top:40px;margin-bottom: 20px; }
+.towbox{display: flex;flex-wrap: wrap;margin-top: 10px; }
+.towbox .towrow{text-align: center;width: 25%;margin-bottom: 26px;}
+.towbox .towrow a{display: block;overflow: hidden}
+.towbox .towrow a img{width: 71px;height: 68px;overflow: hidden;}
+.towbox .towrow p{font-size: 20px;color: #333;display: block;margin-top: 10px;font-family: PingFangSC}
+.swiperTab{display: flex;margin-bottom: 40px;}
+.swiperTab li{width: 50%;text-align: center}
+.swiperTab li span{font-size: 20px;color: #333333;padding: 25px 0;font-family: PingFangSC}
+.swiperTab li.active{border-bottom: 2px solid #910C0C}
+.swiperTab li.active span{color: #910C0C}
+.Tonebox{height: auto;overflow: hidden;}
+.Tboxtop{text-align: center;overflow: hidden}
+.Tboxtop p{font-family: PingFangSC;color: #333333;font-size: 18px;overflow: hidden;margin-bottom: 40px;}
+.Tboxtop a{background: url("../images/btn.png")no-repeat center top;width: 302px;height: 83px;background-size: 302px 83px;overflow: hidden;text-align: center;margin: 0 auto}
+.Tboxtop a span{font-size: 16px;color: #fff;line-height: 83px;}
+.Tboxbto{display: flex;text-align: center;background: url("../images/btn1.png")no-repeat center top;width: 98%;height: 244px;background-size: 98% 244px;overflow: hidden;margin: 0 1%}
+.Tbtos{display: block; width: 100%;height: 142px;margin:22px 15%;padding-top:40px;}
+.Tleft{width:49%;display: inline-block;float: left;border-right: 1px solid #D5000B}
+.Tleft span{font-size: 16px;color: #333;}
+.Tleft p{font-size: 32px;color: #C10008;padding: 10px 0;overflow: hidden}
+.Tright{width: 49%;display: inline-block;float: right}
+.txt1{display: block;margin-bottom: 20px;overflow: hidden;height: auto}
+.txt1 em{ float: left;border-radius: 25px;border: 1px solid #C10008;color: #C10008;display: inline-block;float: left;width: 18px;height: 18px;line-height: 18px;margin-right: 10px;}
+.txt1 p{color: #333;font-size: 14px;text-align: left;display: inline-block;float: right;width: 77%}
+
+
+.txt2 em{ float: left; border-radius: 25px;border: 1px solid #505050;color: #505050;display: inline-block;float: left;width: 18px;height: 18px;line-height: 18px;margin-right: 10px;}
+.txt2 p{color: #333;font-size: 14px;text-align: left;float: right;width: 77%}
+.townew{display: block;overflow: hidden;margin-top: 20px;}
+.townew ul li{display: block;overflow: hidden}
+.townew ul li a{display: block;overflow: hidden;width: 96%;margin: 0 2%;padding-bottom: 20px;}
+.townew ul li a .newtxt{width: 76%;display: inline-block;float: left}
+.townew ul li a img{width: 93px;height: 93px;border-radius: 10px; display: inline-block;float: right}
+.townew ul li a .newtxt h4{font-size: 16px;overflow: hidden;color: #333;font-weight: bold;display: block;margin-bottom: 20px;font-family: PingFangSC;margin-top: 10px;text-overflow:ellipsis;
+    white-space: nowrap;}
+.townew ul li a .newtxt p{font-size:14px;overflow: hidden;color: #333;font-family: PingFangSC}
+
+
+
+
+
+
