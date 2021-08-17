@@ -644,11 +644,17 @@
 
  <script>
 var initTopPosition= $('#pub_nav').offset().top;
+var initLeftPosition= $('#pub_nav').offset().left;
 $(window).scroll(function(){
+
+if($(window).scrollLeft() <= 0 && $(window).scrollTop() <= 0)
     if($(window).scrollTop() > initTopPosition)
         $('#pub_nav').css({'position':'fixed','top':'0px','margin-right':'0px'});
     else
         $('#pub_nav').css({'position':'absolute','top':initTopPosition+'px'});
+else
+    $('#pub_nav').css({'position':'relative','top':$(window).scrollTop()+'px','float':'left'});
+
 });
 </script>
 
