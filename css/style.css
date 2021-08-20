@@ -484,6 +484,7 @@ ul.newsul li span{
 	   color: #F7F7F7;
 	   padding-left: 4px;
 	   margin-top: 20px;
+       opacity: 0.3;
    }
   
   .homelist{
