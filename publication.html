@@ -39,37 +39,37 @@
        <div class="left" id="pub_nav">		
                         <a href="#research-2021">
 					    <div class="year "  style="cursor:pointer;" >
-                            <div class="bt_top">2021</div>
+                            <div class="bt_top" id="bt_2021">2021</div>
                         </div>
                         </a>
 			
                         <a href="#research-2020">
 					    <div class="year "  style="cursor:pointer;" >
-                            <div class="bt_top">2020</div>
+                            <div class="bt_top" id="bt_2020">2020</div>
                         </div>
                         </a>
 				
                         <a href="#research-2019">
 					    <div class="year "  style="cursor:pointer;" >
-                            <div class="bt_top">2019</div>
+                            <div class="bt_top" id="bt_2019">2019</div>
                         </div>
                         </a>
 										
                         <a href="#research-2018">
 					    <div class="year "  style="cursor:pointer;" >
-                            <div class="bt_top">2018</div>
+                            <div class="bt_top" id="bt_2018">2018</div>
                         </div>
                         </a>
 											
                         <a href="#research-2017">
 					    <div class="year "  style="cursor:pointer;" >
-                            <div class="bt_top">2017</div>
+                            <div class="bt_top" id="bt_2017">2017</div>
                         </div>
                         </a>
 										
                         <a href="#before">
 					    <div class="year "  style="cursor:pointer;" >
-                            <div class="bt_top">Before</div>
+                            <div class="bt_top" id="bt_before">Before</div>
                         </div>
                         </a>
 									
@@ -88,7 +88,7 @@
        </div>
 
 
-	<div class="homelist">
+	<div class="homelist" id="paper_list">
 		<div class="listrow">
                        <div class="ka">
 
@@ -657,5 +657,118 @@ else
 </script>
 
 
+ <script>
+var before= $('#before').offset().top;
+var research2017= $('#research-2017').offset().top;
+var research2018= $('#research-2018').offset().top;
+var research2019= $('#research-2019').offset().top;
+var research2020= $('#research-2020').offset().top;
+var research2021= $('#research-2021').offset().top;
+
+$('#bt_2021').css({'opacity':'1.0'});
+$('#bt_2020').css({'opacity':'0.3'});
+$('#bt_2019').css({'opacity':'0.3'});
+$('#bt_2018').css({'opacity':'0.3'});
+$('#bt_2017').css({'opacity':'0.3'});
+$('#bt_before').css({'opacity':'0.3'});
+
+paperlist=document.getElementById('paper_list');
+
+paperlist.addEventListener("scroll", function(){
+    listtop = paperlist.scrollTop+$(window).scrollTop()+69;
+    if (research2021 < listtop) {
+        $('#bt_2021').css({'opacity':'1.0'});
+        $('#bt_2020').css({'opacity':'0.3'});
+        $('#bt_2019').css({'opacity':'0.3'});
+        $('#bt_2018').css({'opacity':'0.3'});
+        $('#bt_2017').css({'opacity':'0.3'});
+        $('#bt_before').css({'opacity':'0.3'});}
+    if(research2020 < listtop) {
+        $('#bt_2021').css({'opacity':'0.3'});
+        $('#bt_2020').css({'opacity':'1.0'});
+        $('#bt_2019').css({'opacity':'0.3'});
+        $('#bt_2018').css({'opacity':'0.3'});
+        $('#bt_2017').css({'opacity':'0.3'});
+        $('#bt_before').css({'opacity':'0.3'});}
+    if(research2019 < listtop) {
+        $('#bt_2021').css({'opacity':'0.3'});
+        $('#bt_2020').css({'opacity':'0.3'});
+        $('#bt_2019').css({'opacity':'1.0'});
+        $('#bt_2018').css({'opacity':'0.3'});
+        $('#bt_2017').css({'opacity':'0.3'});
+        $('#bt_before').css({'opacity':'0.3'});}
+    if(research2018 < listtop) {
+        $('#bt_2021').css({'opacity':'0.3'});
+        $('#bt_2020').css({'opacity':'0.3'});
+        $('#bt_2019').css({'opacity':'0.3'});
+        $('#bt_2018').css({'opacity':'1.0'});
+        $('#bt_2017').css({'opacity':'0.3'});
+        $('#bt_before').css({'opacity':'0.3'});}
+    if(research2017 < listtop) {
+        $('#bt_2021').css({'opacity':'0.3'});
+        $('#bt_2020').css({'opacity':'0.3'});
+        $('#bt_2019').css({'opacity':'0.3'});
+        $('#bt_2018').css({'opacity':'0.3'});
+        $('#bt_2017').css({'opacity':'1.0'});
+        $('#bt_before').css({'opacity':'0.3'});}
+    if(before < listtop) {
+        $('#bt_2021').css({'opacity':'0.3'});
+        $('#bt_2020').css({'opacity':'0.3'});
+        $('#bt_2019').css({'opacity':'0.3'});
+        $('#bt_2018').css({'opacity':'0.3'});
+        $('#bt_2017').css({'opacity':'0.3'});
+        $('#bt_before').css({'opacity':'1.0'});}
+});
+
+$(window).scroll(function(){
+    listtop = paperlist.scrollTop+$(window).scrollTop()+69;
+    if (research2021 < listtop) {
+        $('#bt_2021').css({'opacity':'1.0'});
+        $('#bt_2020').css({'opacity':'0.3'});
+        $('#bt_2019').css({'opacity':'0.3'});
+        $('#bt_2018').css({'opacity':'0.3'});
+        $('#bt_2017').css({'opacity':'0.3'});
+        $('#bt_before').css({'opacity':'0.3'});}
+    if(research2020 < listtop) {
+        $('#bt_2021').css({'opacity':'0.3'});
+        $('#bt_2020').css({'opacity':'1.0'});
+        $('#bt_2019').css({'opacity':'0.3'});
+        $('#bt_2018').css({'opacity':'0.3'});
+        $('#bt_2017').css({'opacity':'0.3'});
+        $('#bt_before').css({'opacity':'0.3'});}
+    if(research2019 < listtop) {
+        $('#bt_2021').css({'opacity':'0.3'});
+        $('#bt_2020').css({'opacity':'0.3'});
+        $('#bt_2019').css({'opacity':'1.0'});
+        $('#bt_2018').css({'opacity':'0.3'});
+        $('#bt_2017').css({'opacity':'0.3'});
+        $('#bt_before').css({'opacity':'0.3'});}
+    if(research2018 < listtop) {
+        $('#bt_2021').css({'opacity':'0.3'});
+        $('#bt_2020').css({'opacity':'0.3'});
+        $('#bt_2019').css({'opacity':'0.3'});
+        $('#bt_2018').css({'opacity':'1.0'});
+        $('#bt_2017').css({'opacity':'0.3'});
+        $('#bt_before').css({'opacity':'0.3'});}
+    if(research2017 < listtop) {
+        $('#bt_2021').css({'opacity':'0.3'});
+        $('#bt_2020').css({'opacity':'0.3'});
+        $('#bt_2019').css({'opacity':'0.3'});
+        $('#bt_2018').css({'opacity':'0.3'});
+        $('#bt_2017').css({'opacity':'1.0'});
+        $('#bt_before').css({'opacity':'0.3'});}
+    if(before < listtop) {
+        $('#bt_2021').css({'opacity':'0.3'});
+        $('#bt_2020').css({'opacity':'0.3'});
+        $('#bt_2019').css({'opacity':'0.3'});
+        $('#bt_2018').css({'opacity':'0.3'});
+        $('#bt_2017').css({'opacity':'0.3'});
+        $('#bt_before').css({'opacity':'1.0'});}
+});
+
+</script>
+
+
+
 </body>
-</html> 
+</html>
