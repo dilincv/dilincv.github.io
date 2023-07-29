@@ -99,7 +99,45 @@ body{
 			background-color: #10B981;
 			transition: 0.5s;
 		}
-		
+
+		.projectconbox{
+			width: 1000px;
+			height: 230px;
+			padding: 30px 30px;
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0.12);
+			border-radius: 10px 10px 20px 30px;
+			margin: 0 auto;
+		}
+		.projectconbox .titles h2{
+			font-size: 38px;
+			color: #fff;
+			
+		}
+		.projectconbox .titles em{
+			width: 500px;
+			height: 6px;
+			background: #10B981;
+			border-radius: 10px 10px 10px 10px;
+			display: block;
+			margin: 0 auto;
+		}
+		.projectconbox p{
+			display: block;
+			text-align: center;
+			font-size: 20px;
+			line-height: 28px;
+			color: #fff;
+			width: 88%;
+			margin-left: 6%;
+			margin-top: 15px;			
+		}
+		.projectconbox sup{
+			position: relative;
+			font-size: 50%;
+			line-height: 5;
+			vertical-align: bottom;
+		}		
 		.indexconbox{
 			width: 800px;
 			height: 100px;
@@ -596,6 +634,27 @@ ul.newsul li span{
 	  .peoBox .plecon{
 		  padding: 30px 50px; 
 	   }
+
+	   .peoBox .plecon p{
+		font-size: 20px;
+		color: #666666;
+		margin-left: 0px;
+	    }
+
+		.peoBox .plecon pre{
+			display: block;
+			padding: 9.5px;
+			margin: 0 0 10px;
+			font-size: 13px;
+			line-height: 1.42857143;
+			color: #333;
+			word-break: break-all;
+			word-wrap: break-word;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			}
+
 	   .plelist{
 		   display: flex;
 		   flex-wrap: wrap;
